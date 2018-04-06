@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fale Conosco</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gustavo Fiorini">
+
+    </head>
+    <body>      
+        <header>
+            <figure>
+                <img width="200" height="200" border="3" src="assets/img/01.jpg" title="stop"
+                    alt="uncle bill">
+            </figure>                   
+            <h1>Gustavo Lenz Fiorini</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="curriculum.html">Curriculum Vitae </a>
+                    </li>
+                    <li>
+                        <a href="fale-conosco.html">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gustavofiorini?tab=repositories" target="_blank"> Meus Projetos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Fale Conosco</h2>
+            <form>
+                <div>
+                    <label for="name">Nome: </label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label>Sexo: </label>
+                    <label> <input type="radio" name="sex" value="masculino">Masculino </label>
+                    <label> <input type="radio" name="sex" value="feminino">Feminino </label> 
+                    <label> <input type="radio" name="sex" value="outro">Outro </label>                                       
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="website">Website: </label>
+                    <input type="url" id="website">
+                </div>
+                <div>
+                <div>
+                    <label for="phone">Telefone:</label>
+                    
+                    <input type="tel" required="required" maxlength="15" id="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" />
+                </div>
+                
+                    <label for="city">Cidade:</label>
+                    <input type="text" id="city" required>                    
+                </div>
+                <div>
+                    <label for="state">Estado: </label>
+                    <select id="state" required>
+                        <option value="RS"> RS</option>
+                        <option value="SC"> SC</option>
+                        <option value="PR"> PR</option>
+                        <option value="SP"> SP</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="subject">Assunto:</label>
+                    <select id="subject" required>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="critica">Crítica</option>                        
+                    </select>
+                </div> 
+                <div>
+                    <label for="archive">Arquivo:</label>
+                    <input type="file" id="archive">
+                </div>                              
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" maxlength="140" cols="30" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                <button type="Reset">Cancelar</button>
+            </form>
+        </section>
+    </body>
+</html>
