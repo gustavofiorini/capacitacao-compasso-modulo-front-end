@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/* Header */
+.main-header{
+    background: #3c3c3c;
+    float: left;
+    clear: both;
+    width: 100%;
+    border-bottom: 3px solid #f00;
+    margin-bottom: 30px;
+    padding-top: 35px; 
+
+}
+
+.main-header .container-img{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-header .container-img img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fff;
+}
+
+.main-header .main-title{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+}
+
+/* Header Menu */
+.menu{
+    background: #f00;
+    width: 100%;
+    float: left;
+    padding: 10px;    
+}
+.menu .container-item {
+    padding: 0 50px;
+    list-style: none;
+}
+.menu .container-item .item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+.menu .container-item .item a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;    
+}
+.menu .container-item .item a:hover {
+    background: #fff;
+    color: #f00;
+}
+
+/* Section */
+section {
+    float: left;
+    width: 100%;
+    padding: 10px 165px;
+    background: #3c3c3c;
+    color: #fff;
+    
+    
+}
+section h3 {
+    font-size: 25px;
+    background: #f00;
+    color: #fff;
+    float: left;
+    clear: both;
+    width: auto; 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+section p, section address, section ul {
+    float: left;
+    width: 100%;
+}
+section > p, section address {
+    font-size: 14px;
+    margin: 5px 0;
+    padding-left: 10px;    
+}
+section address {
+    font-style: normal;
+}
+section .ul-list {
+    padding-left: 20px;
+    list-style: none;
+}
+section .ul-list li {
+    margin: 10px 0;
+    float: left;
+    width: 100%;      
+}
+section .ul-list a {
+    color: #f00;
+    text-decoration: none;
+    float: left;
+    padding: 5px;
+    border: 2px solid #f00;
+    margin-top: 10px;
+    background: #fff;
+}
+section .ul-list a:hover {
+    background: #f00;
+    color: #fff;
+}
+section .ul-list h4 {
+    font-size: 18px;
+    float: left;
+    width: 180px;
+    clear: both;
+    margin-bottom: 10px;
+}
+.main-footer {
+    float: left;
+    width: 100%;
+    color:#3c3c3c;
+    text-align: center;
+    padding: 10px 0;
+    background: #fff;
+
+}
+
