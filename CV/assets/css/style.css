@@ -16,7 +16,7 @@ body{
     clear: both;
     width: 100%;
     border-bottom: 3px solid #f00;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-top: 35px; 
 
 }
@@ -42,7 +42,7 @@ body{
 
 /* Header Menu */
 .menu{
-    background: #f00;
+    background: rgba(255, 0, 0, 0.66);
     width: 100%;
     float: left;
     padding: 10px;    
@@ -70,15 +70,13 @@ body{
 section {
     float: left;
     width: 100%;
-    padding: 10px 165px;
+    padding: 10px 12.5%;
     background: #3c3c3c;
-    color: #fff;
-    
-    
+    color: #fff;    
 }
 section h3 {
     font-size: 25px;
-    background: #f00;
+    background: rgba(255, 0, 0, 0.66);
     color: #fff;
     float: left;
     clear: both;
@@ -134,6 +132,97 @@ section .ul-list h4 {
     text-align: center;
     padding: 10px 0;
     background: #fff;
+    margin-top: 40px;
+}
 
+/* Form */
+.main-form {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+.main-form .title {
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+.main-form .container-text {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;    
+}
+.main-form .container-text2 {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;       
+}
+.main-form .container-text label {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.main-form .container-text2 label {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.main-form .container-text input:not([type=radio]):not([type=file]) {
+    float: left;
+    width: 100%;
+    border: 2px solid #000;
+    padding: 2px;        
+}
+.main-form .container-text.radio label {
+    float: left;
+    width: auto;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    clear: none;
+}
+.main-form .container-text.radio input {
+    margin-right: 5px;
+}
+.main-form .container-text select {    
+    width: 250px;
+    padding: 5px;
+    border: 2px solid #000;
+}
+.main-form .container-text2 select {    
+    width: 65px;
+    padding: 5px;
+    border: 2px solid #000;
+}
+
+.main-form .container-text textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    font: 400 13.333px Arial;
+}
+.main-form button {    
+    width: 49%;
+    padding: 10px;
+    border: 3px solid #000;
+    text-decoration: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-form .btn-submit {
+    background: #000;
+    color: #fff;    
+    float: left;
+}
+.main-form .btn-reset {
+    background: #fff;
+    color: #000;
+    float: right;
 }
 
