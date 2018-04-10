@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/* Header */
+.main-header{
+    background: #fff;
+    float: left;
+    clear: both;
+    width: 100%;
+    border-bottom: 3px solid #f00;
+    margin-bottom: 10px;
+    
+}
+.main-header .div-a a {
+    background: #000;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    float: right;
+    margin: 0;
+    padding: 10px;
+    
+
+}
+.main-header .div-a a:hover {
+    background: #fff;
+    color: #f00;
+}
+.main-header .container-img {
+    float: left;
+    width: 25%;
+    margin-left: 75px; 
+}
+.main-header .label{
+    float: righ;
+    width: 700%;
+    margin-top: 75px;
+    clear: right;
+}
+.main-header .label input {
+    float: right;
+    width: 100%;
+    border: 2px solid #000;
+    padding: 2px;
+}
+
+/* Header Menu */
+.menu{
+    background: #3c3c3c;
+    width: 100%;
+    float: left;
+    padding: 10px;    
+}
+.menu .container-item {
+    padding: 0 50px;
+    list-style: none;
+}
+.menu .container-item .item {
+    float: left;
+    width: calc(100% / 9);
+    text-align: center;
+}
+.menu .container-item .item a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;    
+}
+.menu .container-item .item a:hover {
+    background: #fff;
+    color: #f00;
+}
