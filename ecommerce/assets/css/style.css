@@ -11,23 +11,21 @@ body{
 
 /* Header */
 .main-header{
-    background: #fff;
+    background: #299CC9;
     float: left;
     clear: both;
     width: 100%;
-    border-bottom: 3px solid #f00;
-    margin-bottom: 10px;
-    
+    border-bottom: 3px solid #90CEEB;
+    margin-bottom: 10px;            
 }
 .main-header .div-a a {
     background: #000;
     color: #fff;
     font-size: 25px;
     text-decoration: none;
-    float: right;
-    margin: 0;
-    padding: 10px;
-    
+    float: right;    
+    margin-right: 15px;
+    padding: 10px;    
 
 }
 .main-header .div-a a:hover {
@@ -36,20 +34,20 @@ body{
 }
 .main-header .container-img {
     float: left;
-    width: 25%;
-    margin-left: 75px; 
+    width: 300px;
+    margin: 50px 0 25px 75px; 
 }
-.main-header .label{
-    float: righ;
-    width: 700%;
-    margin-top: 75px;
-    clear: right;
+.main-header .container-img img {
+    width: 250px;
+    height: 125px;
 }
+
 .main-header .label input {
-    float: right;
-    width: 100%;
+    float: left;
+    width: 68%;
     border: 2px solid #000;
-    padding: 2px;
+    padding: 10px;
+    margin: 50px 0 0 12px;
 }
 
 /* Header Menu */
@@ -76,4 +74,108 @@ body{
 .menu .container-item .item a:hover {
     background: #fff;
     color: #f00;
+}
+.content section1 {
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.content section1 .container-item .item .container-img img {
+    width: 450px;
+    height: 350px;
+    margin-left: 35px;    
+}
+.content section1 .container-item .item {
+    list-style: none;
+    width: 50%;
+    float: left;    
+}
+.content section1 .container-item .item a {
+    color: #000;
+    font-size: 25px;
+    text-decoration: none; 
+    text-transform: uppercase;
+    float: left;   
+}
+.content section1 .container-item .item p{
+    margin: 10px 15px 15px 0;
+}
+.content section1 .container-item .item h2{
+    margin: 50px 10px 15px 0;
+    font-size: 30px;
+}
+
+.content section2 {
+    float: left;
+    margin-top: 20px;       
+}
+.content section2 h2 {
+    margin: 10px 0 10px 75px;
+    font-size: 25px;
+    float: left;        
+}
+.content section2 .container-item .item .container-img img {
+    width: 300px;
+    height: 300px;    
+}
+.content section2 .container-item {
+    width:100%;    
+    float: left;    
+    margin-left: 35px;
+}
+.content section2 .container-item .item {
+    list-style: none;
+    width: 31%; 
+    float: left;  
+    margin:20px 20px 10px 0; 
+        
+    text-align: center; 
+}
+.content section2 h3 {
+    text-align: center;
+}
+.content section2 p {
+    text-align: center;
+}
+
+
+
+.content section3 {
+    float: left;
+    margin-top: 20px;       
+}
+.content section3 h2 {
+    margin: 10px 0 10px 75px;
+    font-size: 25px;
+    float: left;        
+}
+.content section3 .container-item .item .container-img img {
+    width: 250px;
+    height: 250px;    
+}
+.content section3 .container-item {
+    width:100%;    
+    float: left;    
+    margin-left: 35px;
+}
+.content section3 .container-item .item {
+    list-style: none;
+    width: 31%; 
+    float: left;  
+    margin:20px 20px 10px 0; 
+    text-align: center;    
+}
+.content section3 h3 {
+    text-align: center;
+}
+.content section3 p {
+    text-align: center;
+}
+.main-footer {
+    float: left;
+    width: 100%;
+    color:#3c3c3c;
+    text-align: center;
+    padding: 10px 0;
+    background: #299CC9;    
 }
