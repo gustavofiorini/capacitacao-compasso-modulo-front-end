@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        #container-resultado { display: none;
+        };
+
+        #resultado-busca{
+            
+        };
+    </style>
+
+</head>
+<body>
+    
+    <form action="" class="js-teste" id="frm-busca">
+        <input type="search" id="campo-busca">
+    </form>   
+    
+    <div id="container-resultado">
+        <h2> Resultado de busca </h2>
+        <div id="sujestoes-produtos"></div>
+        <div id="resultado-busca"></div>
+    </div>
+
+    <script>
+        "use strict"; // obriga inicializar todas as varaiaveis
+        
+        var debug = true;
+
+        var campo_busca = document.getElementById('campo-busca');
+        var container_resultados = document.getElementById('container-resultado');
+        var sujestoes_produtos = document.getElementById('sujestoes-produtos');
+        var resultado_busca = document.getElementById('resultado-busca');
+        
+        //array de sugestoes de produto
+        var ar_sugestoes_produtos = [ 
+            "Detergente",
+            "Café",
+            "Erva",
+            "Cerveja"
+            //push - adiciona 'itens' no array
+         ];
+         //array de resultado de busca
+         var ar_resultado_busca = [
+            {
+                "nome" : "Notebook Dell",
+                "descricao" : "texto texto texto",
+                "img" : "https://i2.zst.com.br/thumbs/45/19/1a/167527849.jpg",
+                "link" : "http://compasso.com.br",
+                "preco" : 10.5
+            },
+            {
+                "nome" : "Celular Sony",
+                "descricao" : "texto2 texto2 texto2",
+                "img" : "https://i2.zst.com.br/thumbs/45/19/1a/167527849.jpg",
+                "link" : "http://compasso.com.br",
+                "preco" : 8
+            },
+            {
+                "nome" : "SmarTV Samsung",
+                "descricao" : "bla bla bla",
+                "img" : "https://i2.zst.com.br/thumbs/45/19/1a/167527849.jpg",
+                "link" : "http://compasso.com.br",
+                "preco" : 12.9
+            }
+
+
+         ];
+         cl(ar_resultado_busca);
+                
+        function cl(msg){
+            if(debug) console.log(msg);
+        };
+        function renderizasugestoes(){
+            var retorno ="";
+            
+            for(var i = 0; i < ar_sugestoes_produtos.length; i++){
+                //cl(ar_sugestoes_produtos[i]);
+                retorno +="<p>"+ar_sugestoes_produtos[i]+"<p>";
+            };
+            sujestoes_produtos.innerHTML = retorno;
+
+            /*for(var i in ar_sugestoes_produtos){
+                cl(ar_sugestoes_produtos[i]);
+            };*/
+        };
+
+        function renderizaResultadoBusca(){
+            var retorno ="";
+            for(var i in ar_resultado_busca){
+                retorno+=
+                "<div>"+
+                "<h3>"+ar_resultado_busca[i].nome+"</h3>"+
+                "<img src='"+ar_resultado_busca[i].img+"'>"+
+                "<p>"+ar_resultado_busca[i].descricao+"<p>"+
+                "<p>"+ar_resultado_busca[i].preco+"<p>"+
+                "<a href = '"+ar_resultado_busca[i].link+"'>Veja mais</a>"+                
+                "</div>";
+            };
+            resultado_busca.innerHTML = retorno;
+        };
+
+        campo_busca.onkeyup = function(){
+            if(this.value.length === 0){
+                cl('exibe sugestoes esconde lista')
+                sujestoes_produtos.style.display = 'block';
+                resultado_busca.style.display = 'none';
+            }else{
+                cl('exibe lista esconde sugestoes')
+                sujestoes_produtos.style.display = 'none';
+                resultado_busca.style.display = 'block';
+            };
+
+        }
+        
+        campo_busca.onfocus = function(){
+            cl('Entrou no campo');
+            container_resultados.style.display = 'block';            
+            
+            if(this.value.length === 0){
+                cl('exibe sugestoes esconde lista')
+                sujestoes_produtos.style.display = 'block';
+                resultado_busca.style.display = 'none';
+            }else{
+                cl('exibe lista esconde sugestoes')
+                sujestoes_produtos.style.display = 'none';
+                resultado_busca.style.display = 'block';
+            };
+
+        };
+        
+        campo_busca.onblur = function(){
+            cl('Saiu do campo')
+            if(this.value.length === 0)
+            container_resultados.style.display = 'none';
+        };
+        
+        renderizasugestoes();
+        renderizaResultadoBusca();
+
+    </script>
+
+</body>
+</html>
