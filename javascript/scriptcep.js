@@ -15,7 +15,7 @@ $txt_cep.bind('keydown', function(event){
         if ($txt_cep.val().length != 9) {        
             alert("Insira um CEP válido");
             $txt_cep.val("");
-            return false;     
+                 
         };  
         $msg_pesquisando.removeClass('hide'); 
         //exemplo professor
